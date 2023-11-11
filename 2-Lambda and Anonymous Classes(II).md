@@ -1,8 +1,8 @@
-# Lambda and Anonymous Classes(II)
+##Lambda and Anonymous Classes(II)
 
 # 前言
 
-读过上一篇之后，相信对Lambda表达式的语法以及基本原理有了一定了解。对于编写代码，有这些知识已经够用。本文将**进一步区分Lambda表达式和匿名内部类在JVM层面的区别，如果对这一部分不感兴趣，可以跳过**。
+读过上一篇之后，相信对Lambda表达式的语法以及基本原理有了一定了解。对于编写代码，有这些知识已经够用。本文将#*进一步区分Lambda表达式和匿名内部类在JVM层面的区别，如果对这一部分不感兴趣，可以跳过**。
 
 # 不是匿名内部类的简写
 
@@ -26,7 +26,7 @@ public class MainAnonymousClass {
 ```
 编译之后文件分布如下，两个class文件分别是主类和匿名内部类产生的：
 
-![2-AnonymousClass.png](./Figures/2-AnonymousClass.png)
+*[2-AnonymousClass.png](./Figures/2-AnonymousClass.png)
 
 进一步分析主类MainAnonymousClass.class的字节码，可发现其创建了匿名内部类的对象：
 
@@ -62,7 +62,7 @@ public class MainLambda {
 ```
 编译之后的结果：
 
-![2-Lambda](./Figures/2-Lambda.png)
+ [2-Lambda](./Figures/2-Lambda.png)
 
 通过javap反编译命名，我们更能看出Lambda表达式内部表示的不同：
 
@@ -112,3 +112,4 @@ public class Hello {
 http://cr.openjdk.java.net/~briangoetz/lambda/lambda-state-final.html
 
 
+ 
